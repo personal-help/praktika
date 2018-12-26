@@ -11,4 +11,24 @@ $(document).ready(function(){
         width: "350px",
         percent: 0,
     }).circularProgress('animate', 100, 1500);
+    
+    for(var k=1;k<=5;k++){ topMenu("#part"+k,"#menu"+k,k); }
+    
+    for(var k=1;k<=6;k++){
+        for(var l=1;l<=6;l++){
+            menu("#m"+k+"part"+l,"#c"+k+"part"+l,l);
+        }
+    }
 });
+
+function topMenu(thisName,forName,num){
+    $(thisName).bind("click",function(){ for(var i=1;i<=5;i++){if(i!=num){
+        if($("#menu"+i)!=""){ $("#menu"+i).hide('fast');} $(forName).slideDown('slow');}}});
+}
+
+function menu(thisName,forName,num){
+    $(thisName).bind("click",function(){ 
+        for(var j=1;j<=6;j++){
+            for(var i=1;i<=6;i++){if(i!=num){
+                if($("#c"+j+"part"+i)!=""){ $("#c"+j+"part"+i).slideUp('slow');} $(forName).slideDown('slow');}}}});
+}

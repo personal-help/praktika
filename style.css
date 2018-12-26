@@ -5,6 +5,7 @@
 
 body{
     background: url(img/fon.png);
+    font-family: cursive;
 }
 
 #predloader{
@@ -48,6 +49,12 @@ body{
     font-size: 20px;
 }
 
+.logoName{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 2.1em;
+}
+
 .logoImg{
     width: 55px;
     height: 50px;
@@ -80,6 +87,8 @@ body{
     width: 10.8%; 
     height: 50px;
     float: right;
+    text-align: center;
+    border-bottom-left-radius: 15px;
 }
 
 .container .cols.col-bann {
@@ -88,6 +97,7 @@ body{
     height: 490px; 
     margin-top:1%; 
     float: right;
+    border-top-left-radius: 15px;
 }
 
 .container .cols.col-2    {
@@ -95,14 +105,15 @@ body{
 }
 
 .container .cols.col-menu {
-    background: rgba(0,220,180,0.3  );
     width: 18%; 
     height: 490px; 
-    margin-top:1%
+    margin-top:1%;
+    position: fixed;
+    top: 15%;
+    left: 0;   
 }
 
 .container .cols.col-logo    {
-    background: rgba(0,200,10,0.2);
     width: 18%; 
     height: 50px;
     text-align: left;
@@ -118,6 +129,14 @@ body{
     height: 70%; 
     border: none;
     padding-top: 15px;
+    color: white;
+    background: black;
+    font-family: sans-serif;
+    font-size: 1.2em; 
+}
+
+#part4{
+     border-bottom-right-radius: 15px;
 }
 
 .container .cols.col-4    {width: 33.33%;}
@@ -125,7 +144,9 @@ body{
 .container .cols.col-6    {width: 50%;}
 .container .cols.col-7    {width: 58.33%;}
 
-.container .cols.col-8    {
+.container .cols.col-8    {width: 66.66%;}
+
+.container .cols.col-topMenu{
     width: 66.66%; 
     height: 50px; 
     margin-left: 2%;
@@ -135,9 +156,10 @@ body{
     background: rgba(0,100,100,0.2);
     width: 66.66%; 
     height: 490px; 
-    margin-left: 2%; 
+    margin-left: 20%; 
     margin-right: 1%; 
     margin-top:1%;
+    border-top-right-radius: 15px;  
 }
 
 .container .cols.col-9    {width: 75%;}
@@ -148,8 +170,12 @@ body{
     width: 90%;
     height: auto;
     padding: 2%;
-    border: 1px solid green;
+    border: 1px solid rgba(0,220,180,1);;
     margin: 3% 2%;
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 15px;
+    background: rgba(0,220,180,0.3);
+    transition: 0.3s;
 }
 
 .container .cols.col-12   {width: 100%;}
@@ -158,9 +184,23 @@ body{
     width: 100%; 
     height: 50px;
     margin-top: 10px;
-    background: rgba(10,100,200,0.3); 
+    margin-bottom: -5px;
+    background: rgba(10,100,200,0.8); 
+    position: fixed; 
+    left: 0; bottom: 0;
 }
 
 .cols.col-parts:hover{
-    background: red;
+    background: rgba(36,9,53,1);
+    color: antiquewhite;
+    height: 51px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.3s;
 }
+
+.cols.col-left:hover{
+    background: rgba(0,220,180,1);
+    width: 85%;
+}
+    
