@@ -1,3 +1,5 @@
+var reg=0;
+
 $(window).on('load',function(){
     var $predloader = $('#predloader');
     $predloader.delay(1650).fadeOut('slow');
@@ -20,13 +22,18 @@ $(document).ready(function(){
         }
     }
     
-    $(".cols.col-logMenu").bind("click", function(){
-        $("#login").show(500);
-    });
+        $(".login").bind("click", function(){
+            $(".cols.col-logMenu").slideDown(500);
+        });
+
+        $(".buttIn").bind("click", function(){
+            $(".cols.col-logMenu").slideUp(500);
+        });    
+    
 });
 
 function topMenu(thisName,forName,num){
-    $(thisName).bind("click",function(){ for(var i=1;i<=5;i++){if(i!=num){
+    $(thisName).bind("click", function(){ for(var i=1;i<=5;i++){if(i!=num){
         if($("#menu"+i)!=""){ $("#menu"+i).hide('fast'); } $(forName).slideDown('slow');}}});
 }
 
