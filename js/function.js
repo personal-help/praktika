@@ -28,7 +28,7 @@ $(document).ready(function(){
 
         $(".buttIn").bind("click", function(){
             $(".cols.col-logMenu").slideUp(500);
-        });    
+        });   
     
 });
 
