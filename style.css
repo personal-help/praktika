@@ -52,7 +52,7 @@ body{
 .logoName{
     margin-bottom: 20px;
     margin-left: 10px;
-    font-size: 2.1em;
+    font-size: 1.6em;
 }
 
 .logoImg{
@@ -141,6 +141,14 @@ body{
 }
 
 .container .cols.col-4    {width: 33.33%;}
+
+.container .cols.col-model{
+    width: 30%;
+    height: 290px;
+    margin: 1.5%;
+    background: rgba(255,255,255,0.8);
+    
+}
 
 .container .cols.col-logMenu  {
     width: 25%;
@@ -294,4 +302,25 @@ body{
 .newsImg{
     width: 90%;
 }
+
+.modelImg{
+    width: 90%;
+    margin: 5%;
+}
     
+.modelDownload{
+    width: 90%;
+    height: auto;
+    border: 1px solid rgba(30,30,30,0.4);
+    margin-top: 6%;
+    padding: 2%;
+}
+
+.modelDownload:hover{
+    background: rgba(20,20,20,0.2);
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
+}
