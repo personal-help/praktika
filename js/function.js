@@ -37,6 +37,12 @@ $(document).ready(function() {
     
     $("#part5").bind("click", function() {
         $("#news").slideDown('slow');
+        
+        for(var i=1;i<=5;i++){
+            for(var j=1;j<=5;j++){
+                $("#c"+i+"part"+j).slideUp(300);
+            }
+        }
     });
     
 //3d printers==========================================
