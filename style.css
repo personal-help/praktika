@@ -4,7 +4,7 @@
 }
 
 body{
-    background: url(img/fon.png) no-repeat;
+    background: #bfd7dd;
     font-family: cursive;
 }
 
@@ -89,15 +89,19 @@ body{
     float: right;
     text-align: center;
     border-bottom-left-radius: 15px;
+    margin-bottom: 42.3%;
 }
 
 .container .cols.col-bann {
-    background: rgba(132,195,190,0.4);
+    background: rgba(86,124,164,0.8);
     width: 11%; 
     height: 520px; 
     margin-top:1%; 
     float: right;
     border-top-left-radius: 15px;
+    position: fixed;
+    left: 89%;
+    top: 8.8%;
 }
 
 .container .cols.col-2    {
@@ -214,7 +218,6 @@ body{
     margin-top: 10px;
     margin-bottom: -5px;
     background: rgba(10,100,200,0.8); 
-    
 }
 
 .login{
