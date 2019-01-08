@@ -164,7 +164,7 @@ body{
     display: none;
     border-radius: 15px;
 }
-.container .cols.col-5    {width: 41.66%; background: grey;}
+.container .cols.col-5    {width: 41.66%;text-align: left; margin-left: 4%;}
 .container .cols.col-6    {width: 50%;}
 .container .cols.col-7    {width: 58.33%;}
 
@@ -326,4 +326,14 @@ body{
 a{ 
     text-decoration: none;
     color: black;
+}
+
+.printInfo{
+    text-align: justify;
+    font-size: 1.2em;
+    
+}
+
+input{
+    text-align: center;
 }
