@@ -223,14 +223,15 @@ body{
 @media screen and (max-width: 500px){
     .container .cols.col-log  {display: none;}
     .container .cols.col-bann {display: none;}
-    .container .cols.col-menu {width: 100%; display: none;}
+    .container .cols.col-menu {width: 92%; height: auto;
+    position: inherit; margin-top: 240px; margin-left: 2%; padding: 0;}
     .container .cols.col-logo {width: 100%;}
     .container .cols.col-parts{width: 100%; border-radius: 15px;}
     .container .cols.col-model{width: 95%;}
     .container .cols.col-6    {width: 100%;}
     .container .cols.col-topMenu{width: 96%; margin: 2%;}
-    .container .cols.col-cont {width: 98%; margin-left: 1%; margin-top: 230px;}
-    .container .cols.col-left {width: 100%;}
+    .container .cols.col-cont {width: 98%; margin-left: 1%; margin-top: 0; position: relative;}
+    .container .cols.col-left {width: 98%; height: auto; margin: 1%; border-radius: 0;}
 }
 
 .login{
