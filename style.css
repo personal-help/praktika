@@ -273,6 +273,7 @@ body{
 
 .buttIn{
     margin-top: 15px;
+    margin-bottom: 15px;
     width: 50%;
     height: auto;
     font-size: 1.3em;
@@ -330,6 +331,7 @@ body{
     border: 1px solid rgba(30,30,30,0.4);
     margin-top: 6%;
     padding: 2%;
+    margin-bottom: 2%;
 }
 
 .modelDownload:hover{
