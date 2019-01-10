@@ -31,9 +31,29 @@ $(document).ready(function() {
         $(".cols.col-logMenu").slideDown(500);
     });
 
-    $(".buttIn").bind("click", function() {
-        $(".cols.col-logMenu").slideUp(500);
-    });   
+    $("#inpB").bind("click", function() {
+        $(".cols.col-logMenu").slideUp(500);    
+    });  
+    
+    
+    
+    $("#zakaz").bind("click", function() {
+        
+        var one = $("#one").val();
+        var two = $("#two").val();
+        var thr = $("#thr").val();
+        var fou = $("#fou").val();
+        var fiv = $("#fiv").val();
+        var six = $("#six").val();
+        var file = $("#file").val();
+        
+        
+        if((one!='' && two!='') && (thr!='' && fou!='') && (fiv!='' && six!='') && file!=''){
+            
+            alert("Ожидайте письмо на почту!");
+        }
+        else{ alert("Внесите данные во все поля!");}
+    });
     
     $("#part5").bind("click", function() {
         $("#news").slideDown('slow');

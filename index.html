@@ -116,6 +116,7 @@
                 <div id="c2part2" style="display:none"> </div>
                 <div id="c2part3" style="display:none"> </div>
                 <div id="c2part4" style="display:none"> </div>
+
                 
                 <div id="c3part1" style="display:none"> 
                 
@@ -137,33 +138,33 @@
                             </div>
                         
                             <div class="cols col-5"> Размер детали</div>
-                            <div class="cols col-5"> <input type="text" placeholder="10x10x10"> </div>
+                            <div class="cols col-5"> <input id="one" type="text" required placeholder="10x10x10"> </div>
                             
                             <div class="cols col-5"> Файл </div>
-                            <div class="cols col-5"> <input type="file"> </div>
+                            <div class="cols col-5"> <input id="file" type="file" required> </div>
                         
                         </div>
                         
                         <div class=" cols col-6">
                             Клиент<hr><br>
                             <div class="cols col-5"> Фамилия </div> 
-                            <div class="cols col-5"> <input type="text"> </div> 
+                            <div class="cols col-5"> <input id="two" type="text" required> </div> 
                         
                             <div class="cols col-5"> Имя </div>
-                            <div class="cols col-5"> <input type="text"> </div>
+                            <div class="cols col-5"> <input id="thr" type="text" required> </div>
                             
                             <div class="cols col-5"> Адрес доставки </div>
-                            <div class="cols col-5"> <input type="text"> </div>
+                            <div class="cols col-5"> <input id="fou" type="text" required> </div>
                             
                             <div class="cols col-5"> Действующий E-mail </div>
-                            <div class="cols col-5"> <input type="text"> </div>
+                            <div class="cols col-5"> <input id="fiv" type="email" required> </div>
                             
                             <div class="cols col-5"> Номер телефона </div>
-                            <div class="cols col-5"> <input type="text"> </div>
+                            <div class="cols col-5"> <input id="six" type="tel" pattern="+77-[0-9]{2}-[0-9]{3}-[0-9]{2}" required> </div>
                         
                         </div>
                         <hr>
-                        <input id="zakazBut" class="buttIn" type="submit" value="Готово">
+                        <input id="zakaz" class="buttIn" type="submit" value="Готово">
                        
                     </div>
                     
@@ -215,7 +216,7 @@
                 <input class="inputLog" placeholder="passowrd">
               </div>
               
-                <input class="buttIn" type="submit" value="Войти">
+                <input id="inpB" class="buttIn" type="submit" value="Войти">
             
           </div>
     
