@@ -30,15 +30,23 @@ $(document).ready(function() {
     $(".login").bind("click", function() {
         $(".cols.col-logMenu").slideDown(500);
     });
+    
+    $(".closeLog").bind("click", function() {
+        $(".cols.col-logMenu").slideUp(500);
+    });
 
     $("#inpB").bind("click", function() {
-        $(".cols.col-logMenu").slideUp(500);    
+        var log1 = $("#log1").val();
+        var log2 = $("#log2").val();
+        
+        if(log1!='' && log2!=''){
+            alert("Неверный логин или пароль!");
+            $(".cols.col-logMenu").slideUp(500);
+        }
+        else {alert("Поле не может быть пустым!");}            
     });  
     
-    
-    
     $("#zakaz").bind("click", function() {
-        
         var one = $("#one").val();
         var two = $("#two").val();
         var thr = $("#thr").val();

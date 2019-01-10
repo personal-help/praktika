@@ -354,3 +354,14 @@ input{
     text-align: center;
     width: 100%;
 }
+
+.closeLog{
+    font-family: monospace;
+   float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    padding: 2px 5px;;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+}
