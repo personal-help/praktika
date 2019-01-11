@@ -26,14 +26,14 @@ $(document).ready(function() {
             topMenu("#part"+5,"#menu"+5,5);
         }
     }
-    
+        
     $(".login").bind("click", function() {
         $(".cols.col-logMenu").slideDown(500);
     });
     
     $(".closeLog").bind("click", function() {
         $(".cols.col-logMenu").slideUp(500);
-    });
+    }); 
 
     $("#inpB").bind("click", function() {
         var log1 = $("#log1").val();
@@ -170,7 +170,7 @@ function model(thisName,imgLink,name,download) {
 
 function topMenu(thisName,forName,num) {
     $(thisName).bind("click", function(){ for(var i=1;i<=5;i++){if(i!=num){
-        if($("#menu"+i)!=""){ $("#menu"+i).hide('fast'); } $(forName).slideDown('slow');}}});
+        if($("#menu"+i)!=""){ $("#menu"+i).hide('fast'); } $(forName).slideDown('slow'); }}});
 }
 
 function menu(thisName,forName,num,num2) {        
