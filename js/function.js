@@ -170,7 +170,8 @@ function model(thisName,imgLink,name,download) {
 
 function topMenu(thisName,forName,num) {
     $(thisName).bind("click", function(){ for(var i=1;i<=5;i++){if(i!=num){
-        if($("#menu"+i)!=""){ $("#menu"+i).hide('fast'); } $(forName).slideDown('slow'); }}});
+        if($("#menu"+i)!=""){ $("#menu"+i).hide('fast'); } $(forName).slideDown('slow'); }}
+        for(var i=1;i<=4;i++){$("#c"+i+"part1").slideUp('fast'); $("#news").slideUp('fast');} $("#c"+num+"part1").slideDown('fast'); });
 }
 
 function menu(thisName,forName,num,num2) {        
