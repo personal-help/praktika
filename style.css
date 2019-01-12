@@ -94,8 +94,8 @@ body{
 .container .cols.col-bann {
     background: rgba(86,124,164,0.8);
     width: 11%; 
-    height: 520px; 
-    margin-top:1%; 
+    height: 60%; 
+    margin-top: 3px;  
     float: right;
     border-top-left-radius: 15px;
     position: fixed;
